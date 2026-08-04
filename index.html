@@ -949,6 +949,7 @@
     <div class="field">
       <label>แพทย์ผู้สั่ง</label>
       <select id="doctorSelect" onchange="onPresetChange('doctorSelect','doctorOther')">
+        <option value="ไม่ระบุ">ไม่ระบุ</option>
         <option value="DR.Gift">DR.Gift</option>
         <option value="DR.Earth">DR.Earth</option>
         <option value="DR.June">DR.June</option>
@@ -1215,6 +1216,11 @@ function getPersonValue(selectId, otherId, prefix) {
     return prefix ? `${prefix}${name}` : name;
   }
   return sel.value;
+}
+
+function getDoctorValue() {
+  const value = getPersonValue('doctorSelect', 'doctorOther');
+  return value === '—' ? 'ไม่ระบุ' : value;
 }
 
 // ── Package formulas ──
@@ -2296,7 +2302,7 @@ function buildReceiptA4() {
   const note    = document.getElementById('note').value.trim();
   const price   = document.getElementById('price').value.trim();
   const stockPerson = getPersonValue('stockPerson', 'stockPersonOther');
-  const doctor       = getPersonValue('doctorSelect', 'doctorOther');
+  const doctor       = getDoctorValue();
   const nurse          = getPersonValue('nurseSelect', 'nurseOther');
   const mixer         = getPersonValue('mixerSelect', 'mixerOther', 'BT.');
 
@@ -2751,7 +2757,7 @@ function getCurrentOrderData() {
     itemCount,
     staff: {
       stock: getPersonValue('stockPerson', 'stockPersonOther'),
-      checker: getPersonValue('doctorSelect', 'doctorOther'),
+      checker: getDoctorValue(),
       mixer: getPersonValue('mixerSelect', 'mixerOther', 'BT.'),
       nurse: getPersonValue('nurseSelect', 'nurseOther')
     },
@@ -2769,7 +2775,7 @@ function buildStickerTemplate(order) {
 
   const staffRows = [
     ['ผู้จัด', order.staff.stock],
-    ['ผู้ตรวจสอบ', order.staff.checker],
+    ['แพทย์ผู้สั่ง', order.staff.checker || 'ไม่ระบุ'],
     ['ผู้ผสม', order.staff.mixer],
     ['ผู้เจาะ', order.staff.nurse]
   ].map(([label, name]) => `
@@ -2938,7 +2944,7 @@ function buildOrderLookupHTML(order) {
     <div class="review-item"><span>เวลา</span><span>${escapeHTML(order.time || '—')}</span></div>
     <div class="review-section-title">Staff</div>
     <div class="review-item"><span>ผู้จัด</span><span>${escapeHTML(order.staff?.stock || '—')}</span></div>
-    <div class="review-item"><span>ผู้ตรวจสอบ</span><span>${escapeHTML(order.staff?.checker || '—')}</span></div>
+    <div class="review-item"><span>แพทย์ผู้สั่ง</span><span>${escapeHTML(order.staff?.checker || 'ไม่ระบุ')}</span></div>
     <div class="review-item"><span>ผู้ผสม</span><span>${escapeHTML(order.staff?.mixer || '—')}</span></div>
     <div class="review-item"><span>ผู้เจาะ</span><span>${escapeHTML(order.staff?.nurse || '—')}</span></div>
     <div class="review-section-title">น้ำเกลือ / วิตามิน</div>
@@ -3013,7 +3019,7 @@ function buildThermalReceiptHTML() {
   const note    = document.getElementById('note').value.trim();
   const price   = document.getElementById('price').value.trim();
   const stockPerson = getPersonValue('stockPerson', 'stockPersonOther');
-  const doctor  = getPersonValue('doctorSelect', 'doctorOther');
+  const doctor  = getDoctorValue();
   const nurse   = getPersonValue('nurseSelect', 'nurseOther');
   const mixer   = getPersonValue('mixerSelect', 'mixerOther', 'BT.');
   const { pkgTitle, sections } = getCurrentItems();
@@ -3258,7 +3264,7 @@ function clearForm() {
   document.getElementById('stockPerson').value = 'พิชญาพร (สต็อก)';
   document.getElementById('stockPersonOther').value = '';
   document.getElementById('stockPersonOther').style.display = 'none';
-  document.getElementById('doctorSelect').value = 'DR.Gift';
+  document.getElementById('doctorSelect').value = 'ไม่ระบุ';
   document.getElementById('doctorOther').value = '';
   document.getElementById('doctorOther').style.display = 'none';
   document.getElementById('nurseSelect').value = 'RN.Nuch';
