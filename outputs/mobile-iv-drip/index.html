@@ -601,7 +601,7 @@
     --sticker-muted: #333;
     --sticker-line: #111;
     --sticker-pad: 1.15mm;
-    --sticker-qr: 14.6mm;
+    --sticker-qr: 16mm;
     width: 50mm;
     height: 30mm;
     box-sizing: border-box;
@@ -620,41 +620,41 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    height: 5.1mm;
+    height: 4.6mm;
     border-bottom: .24mm solid var(--sticker-line);
     padding: 0 .6mm .45mm .6mm;
   }
   .iv-sticker-brand-main {
-    font-size: 8.8pt;
+    font-size: 8.4pt;
     font-weight: 900;
     line-height: .82;
   }
   .iv-sticker-brand-sub {
     margin-top: .25mm;
-    font-size: 5.4pt;
+    font-size: 5.1pt;
     font-weight: 800;
   }
   .iv-sticker-order-type {
     display: inline-block;
-    padding: .75mm 1.25mm .55mm;
+    padding: .65mm 1.05mm .45mm;
     background: #000;
     color: #fff;
     border-radius: .65mm;
-    font-size: 6.9pt;
+    font-size: 6.4pt;
     font-weight: 900;
     text-align: right;
     white-space: nowrap;
   }
   .iv-sticker-body {
     display: block;
-    height: 22.65mm;
-    padding-top: .45mm;
+    height: 22.15mm;
+    padding-top: .4mm;
   }
   .iv-sticker-main {
     display: grid;
-    grid-template-columns: 29.15mm 15.55mm;
-    column-gap: .75mm;
-    height: 14.85mm;
+    grid-template-columns: 28.2mm 16.8mm;
+    column-gap: .55mm;
+    height: 17.1mm;
     border-bottom: .22mm solid var(--sticker-line);
     padding: .25mm .6mm .6mm .6mm;
   }
@@ -695,11 +695,12 @@
     line-height: 1.05;
   }
   .iv-sticker-qr-id {
+    display: none;
     max-width: var(--sticker-qr);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 4.2pt;
+    font-size: 4pt;
     font-weight: 900;
     color: var(--sticker-muted);
   }
@@ -719,21 +720,21 @@
     text-transform: uppercase;
   }
   .iv-sticker-hn {
-    font-size: 12.6pt;
+    font-size: 11.2pt;
     font-weight: 900;
     line-height: .82;
     word-break: break-word;
   }
   .iv-sticker-hn::before {
     content: "HN: ";
-    font-size: 7pt;
+    font-size: 6.3pt;
     font-weight: 900;
   }
   .iv-sticker-name {
     margin-top: .1mm;
     padding-bottom: .28mm;
     border-bottom: .18mm dotted var(--sticker-line);
-    font-size: 6.6pt;
+    font-size: 6pt;
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
@@ -745,7 +746,7 @@
   }
   .iv-sticker-recipe-name {
     margin-top: .15mm;
-    font-size: 7pt;
+    font-size: 6.6pt;
     font-weight: 900;
     line-height: .9;
     white-space: nowrap;
@@ -755,13 +756,13 @@
   .iv-sticker-badges {
     display: flex;
     gap: .55mm;
-    margin-top: .35mm;
+    margin-top: .3mm;
   }
   .iv-sticker-badge {
     border: .2mm solid var(--sticker-line);
     border-radius: .65mm;
     padding: .35mm .85mm .25mm;
-    font-size: 5.25pt;
+    font-size: 5pt;
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
@@ -770,10 +771,9 @@
     display: grid;
     grid-template-columns: 1.1fr .75fr .45fr;
     gap: .75mm;
-    height: 3.7mm;
+    height: 4.35mm;
     align-items: center;
-    padding: .28mm .7mm;
-    border-bottom: .22mm solid var(--sticker-line);
+    padding: .32mm .7mm;
   }
   .iv-sticker-meta-value {
     margin-top: .1mm;
@@ -784,7 +784,7 @@
     text-overflow: ellipsis;
   }
   .iv-sticker-staff {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     gap: 0 1mm;
     height: 3.65mm;
@@ -2784,18 +2784,6 @@ function buildStickerTemplate(order) {
       onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'iv-sticker-qr-fallback', innerHTML:'ORDER ID<br>${escapeHTML(order.orderId)}'}))"
     >`;
 
-  const staffRows = [
-    ['ผู้จัด', order.staff.stock],
-    ['แพทย์ผู้สั่ง', order.staff.checker || 'ไม่ระบุ'],
-    ['ผู้ผสม', order.staff.mixer],
-    ['ผู้เจาะ', order.staff.nurse]
-  ].map(([label, name]) => `
-    <div class="iv-sticker-staff-card">
-      <div class="iv-sticker-staff-label">${escapeHTML(label)}</div>
-      <div class="iv-sticker-staff-name">${escapeHTML(name || '—')}</div>
-    </div>
-  `).join('');
-
   return `
     <section class="iv-sticker" aria-label="IV Order Sticker">
       <header class="iv-sticker-header">
@@ -2825,7 +2813,6 @@ function buildStickerTemplate(order) {
 
           <div class="iv-sticker-qr">
             ${qrMarkup}
-            <div class="iv-sticker-qr-id">Scan Order ID</div>
           </div>
         </section>
 
@@ -2844,9 +2831,6 @@ function buildStickerTemplate(order) {
           </div>
         </section>
 
-        <section class="iv-sticker-staff">
-          ${staffRows}
-        </section>
       </div>
 
       <div class="iv-sticker-future-slot" data-ready-for="allergy,batch,lot,barcode,recipe-version,priority"></div>
@@ -3103,8 +3087,7 @@ function doPrint() {
 }
 
 function printOrderSheet() {
-  const paper = document.getElementById('paperSize').value;
-  openPrintReview(paper);
+  openPrintReview('80mm');
 }
 
 function executePrint(paper) {
