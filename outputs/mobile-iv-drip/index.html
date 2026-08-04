@@ -431,11 +431,10 @@
     z-index: 100;
     box-shadow: 0 -4px 16px rgba(var(--rose-rgb),0.08);
   }
+  .btn-order-print,
   .btn-print {
     flex: 1;
     padding: 14px;
-    background: linear-gradient(135deg, var(--rose-dk), var(--rose));
-    color: #fff;
     border: none;
     border-radius: 12px;
     font-family: inherit;
@@ -443,9 +442,19 @@
     font-weight: 700;
     cursor: pointer;
     display: flex; align-items: center; justify-content: center; gap: 8px;
-    box-shadow: 0 4px 14px rgba(var(--rose-rgb),0.35);
     transition: opacity .15s;
   }
+  .btn-print {
+    background: linear-gradient(135deg, var(--rose-dk), var(--rose));
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(var(--rose-rgb),0.35);
+  }
+  .btn-order-print {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  }
+  .btn-order-print:active,
   .btn-print:active { opacity: .85; }
   .btn-clear {
     padding: 14px 16px;
@@ -1105,8 +1114,11 @@
 <!-- ── Bottom bar ── -->
 <div class="print-bar">
   <button class="btn-clear" onclick="clearForm()">ล้าง</button>
+  <button class="btn-order-print" onclick="printOrderSheet()">
+    ใบจัด
+  </button>
   <button class="btn-print" onclick="printSticker()">
-    Print Sticker
+    ปริ้นสติ๊กเกอร์
   </button>
 </div>
 
@@ -3086,6 +3098,11 @@ function setPageSize(paper) {
 
 // ── Print via system dialog (works for USB-connected thermal printer via OS driver) ──
 function doPrint() {
+  const paper = document.getElementById('paperSize').value;
+  openPrintReview(paper);
+}
+
+function printOrderSheet() {
   const paper = document.getElementById('paperSize').value;
   openPrintReview(paper);
 }
