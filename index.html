@@ -373,6 +373,17 @@
   }
   .review-item span:first-child { font-weight: 700; color: var(--ink); }
   .review-item span:last-child { font-weight: 900; color: #000; white-space: nowrap; }
+  .review-note {
+    padding: 8px 10px;
+    border: 1.5px solid #000;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
   .review-actions {
     display: flex;
     gap: 8px;
@@ -581,7 +592,7 @@
     --sticker-muted: #333;
     --sticker-line: #111;
     --sticker-pad: 1.15mm;
-    --sticker-qr: 13mm;
+    --sticker-qr: 14.6mm;
     width: 50mm;
     height: 30mm;
     box-sizing: border-box;
@@ -600,18 +611,18 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    height: 5.4mm;
+    height: 5.1mm;
     border-bottom: .24mm solid var(--sticker-line);
     padding: 0 .6mm .45mm .6mm;
   }
   .iv-sticker-brand-main {
-    font-size: 9.4pt;
+    font-size: 8.8pt;
     font-weight: 900;
     line-height: .82;
   }
   .iv-sticker-brand-sub {
     margin-top: .25mm;
-    font-size: 5.8pt;
+    font-size: 5.4pt;
     font-weight: 800;
   }
   .iv-sticker-order-type {
@@ -620,21 +631,21 @@
     background: #000;
     color: #fff;
     border-radius: .65mm;
-    font-size: 7.2pt;
+    font-size: 6.9pt;
     font-weight: 900;
     text-align: right;
     white-space: nowrap;
   }
   .iv-sticker-body {
     display: block;
-    height: 22.3mm;
-    padding-top: .55mm;
+    height: 22.65mm;
+    padding-top: .45mm;
   }
   .iv-sticker-main {
     display: grid;
-    grid-template-columns: 31.2mm 14.2mm;
-    column-gap: .85mm;
-    height: 13.5mm;
+    grid-template-columns: 29.15mm 15.55mm;
+    column-gap: .75mm;
+    height: 14.85mm;
     border-bottom: .22mm solid var(--sticker-line);
     padding: .25mm .6mm .6mm .6mm;
   }
@@ -646,7 +657,7 @@
     display: grid;
     justify-items: center;
     align-content: start;
-    gap: .25mm;
+    gap: .15mm;
   }
   .iv-sticker-qr svg,
   .iv-sticker-qr img,
@@ -679,7 +690,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 4.6pt;
+    font-size: 4.2pt;
     font-weight: 900;
     color: var(--sticker-muted);
   }
@@ -699,21 +710,21 @@
     text-transform: uppercase;
   }
   .iv-sticker-hn {
-    font-size: 14.4pt;
+    font-size: 12.6pt;
     font-weight: 900;
     line-height: .82;
     word-break: break-word;
   }
   .iv-sticker-hn::before {
     content: "HN: ";
-    font-size: 7.8pt;
+    font-size: 7pt;
     font-weight: 900;
   }
   .iv-sticker-name {
     margin-top: .1mm;
     padding-bottom: .28mm;
     border-bottom: .18mm dotted var(--sticker-line);
-    font-size: 7.2pt;
+    font-size: 6.6pt;
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
@@ -725,7 +736,7 @@
   }
   .iv-sticker-recipe-name {
     margin-top: .15mm;
-    font-size: 7.8pt;
+    font-size: 7pt;
     font-weight: 900;
     line-height: .9;
     white-space: nowrap;
@@ -735,13 +746,13 @@
   .iv-sticker-badges {
     display: flex;
     gap: .55mm;
-    margin-top: .45mm;
+    margin-top: .35mm;
   }
   .iv-sticker-badge {
     border: .2mm solid var(--sticker-line);
     border-radius: .65mm;
     padding: .35mm .85mm .25mm;
-    font-size: 5.8pt;
+    font-size: 5.25pt;
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
@@ -750,14 +761,14 @@
     display: grid;
     grid-template-columns: 1.1fr .75fr .45fr;
     gap: .75mm;
-    height: 4.15mm;
+    height: 3.7mm;
     align-items: center;
     padding: .28mm .7mm;
     border-bottom: .22mm solid var(--sticker-line);
   }
   .iv-sticker-meta-value {
     margin-top: .1mm;
-    font-size: 5.7pt;
+    font-size: 5.25pt;
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
@@ -767,21 +778,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 1mm;
-    height: 4.35mm;
-    padding: .3mm .7mm 0;
+    height: 3.65mm;
+    padding: .18mm .7mm 0;
   }
   .iv-sticker-staff-card {
     display: grid;
     grid-template-columns: 8.6mm 1fr;
     align-items: center;
     min-width: 0;
-    min-height: 2.05mm;
+    min-height: 1.75mm;
     padding: 0;
     overflow: hidden;
   }
   .iv-sticker-staff-name {
     margin-top: 0;
-    font-size: 5pt;
+    font-size: 4.7pt;
     font-weight: 900;
     line-height: 1;
     white-space: nowrap;
@@ -1053,7 +1064,7 @@
     <div class="field">
       <label>ขนาดกระดาษ</label>
       <select id="paperSize" onchange="onPaperChange()">
-        <option value="50x30" selected>50×30mm — สติ๊กเกอร์/เครื่องปริ้นบูธ</option>
+        <option value="50x30" selected>50×30mm — สติ๊กเกอร์</option>
         <option value="80x50">80×50mm — สติ๊กเกอร์แนวนอน</option>
         <option value="80mm">80mm — ม้วนความร้อน</option>
         <option value="100x75">75×100mm — สติ๊กเกอร์แนวตั้ง</option>
@@ -2739,6 +2750,7 @@ function getCurrentOrderData() {
     time: timestamp.time,
     hn,
     patientName: document.getElementById('name').value.trim() || '—',
+    note: document.getElementById('note').value.trim(),
     recipeName,
     duration: getStickerDuration(currentItems.pkgVal),
     itemCount,
@@ -2929,6 +2941,10 @@ function buildOrderLookupHTML(order) {
     <div class="review-item"><span>Order ID</span><span>${escapeHTML(order.orderId || '—')}</span></div>
     <div class="review-item"><span>วันที่</span><span>${escapeHTML(order.date || '—')}</span></div>
     <div class="review-item"><span>เวลา</span><span>${escapeHTML(order.time || '—')}</span></div>
+    ${order.note ? `
+      <div class="review-section-title">หมายเหตุ</div>
+      <div class="review-note">${escapeHTML(order.note)}</div>
+    ` : ''}
     <div class="review-section-title">Staff</div>
     <div class="review-item"><span>ผู้จัด</span><span>${escapeHTML(order.staff?.stock || '—')}</span></div>
     <div class="review-item"><span>แพทย์ผู้สั่ง</span><span>${escapeHTML(order.staff?.checker || 'ไม่ระบุ')}</span></div>
