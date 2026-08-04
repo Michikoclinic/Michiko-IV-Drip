@@ -1,0 +1,2268 @@
+{
+  "formulaUpdated": "22/06/69",
+  "packages": {
+    "sb_instant": {
+      "group": "Super Blink",
+      "label": "IV Instant Shot",
+      "time": "Push 5 min",
+      "icon": "⚡",
+      "sections": [
+        {
+          "head": "IV Slowly push in 5 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "20 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "20 ml"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sb_fast": {
+      "group": "Super Blink",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sb_drip": {
+      "group": "Super Blink",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly push in 5 min",
+          "items": [
+            {
+              "name": "0.9% NSS 20ml + GSH (600 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sb_drip2": {
+      "group": "Super Blink",
+      "label": "IV Drip X2",
+      "time": "Drip 60 min",
+      "icon": "✨",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Selenium (200 mcg/ml)",
+              "qty": "1 ml"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly push in 5 min",
+          "items": [
+            {
+              "name": "0.9% NSS + GSH (1200 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "ah_instant": {
+      "group": "Anti Hangover",
+      "label": "IV Instant Shot",
+      "time": "Push 5 min",
+      "icon": "⚡",
+      "sections": [
+        {
+          "head": "IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "20 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "ah_fast": {
+      "group": "Anti Hangover",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "ah_drip": {
+      "group": "Anti Hangover",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "4 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "pfd_instant": {
+      "group": "Prep For Drink",
+      "label": "IV Instant Shot",
+      "time": "Push 5 min",
+      "icon": "⚡",
+      "sections": [
+        {
+          "head": "IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "20 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "pfd_fast": {
+      "group": "Prep For Drink",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "lk_instant": {
+      "group": "Liver & Kidney Detox",
+      "label": "IV Instant Shot",
+      "time": "Push 5 min",
+      "icon": "⚡",
+      "sections": [
+        {
+          "head": "IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "20 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "lk_fast": {
+      "group": "Liver & Kidney Detox",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Drip in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "lk_drip": {
+      "group": "Liver & Kidney Detox",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "4 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Drip in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "vitc_fast": {
+      "group": "Vitamin C Mega Dose+B",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "10 amp"
+            }
+          ]
+        },
+        {
+          "head": "D5W/NSS 20 ml + push",
+          "items": [
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "vitc_drip": {
+      "group": "Vitamin C Mega Dose+B",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "20 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "D5W/NSS 20 ml + push",
+          "items": [
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "myers_drip": {
+      "group": "Modified Myers' Cocktails",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12 Methylcobal 500 ug/ml",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Calcium Gluconate 10ml/amp",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "2 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "si_fast": {
+      "group": "Strong Immunity",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "1 ml"
+            }
+          ]
+        }
+      ]
+    },
+    "si_drip": {
+      "group": "Strong Immunity",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "1 ml"
+            },
+            {
+              "name": "MTE-5",
+              "qty": "1 ml"
+            }
+          ]
+        },
+        {
+          "head": "D5W/NSS 20 ml + push",
+          "items": [
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "nad_drip": {
+      "group": "IV NAD+",
+      "label": "IV NAD+ UP",
+      "time": "Drip 60 min",
+      "icon": "🔬",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "NAD+ 250 mg/vial",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Hinokiol",
+              "qty": ""
+            },
+            {
+              "name": "Resveratrol",
+              "qty": ""
+            }
+          ]
+        }
+      ]
+    },
+    "sr_instant": {
+      "group": "Stress Release",
+      "label": "IV Instant Shot",
+      "time": "Push 5 min",
+      "icon": "⚡",
+      "sections": [
+        {
+          "head": "IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "D5W/NSS 20 ml + Vitamin B6 complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sr_fast": {
+      "group": "Stress Release",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sr_drip": {
+      "group": "Stress Release",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "ALA (300mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sr_drip2": {
+      "group": "Stress Release",
+      "label": "IV Drip X2",
+      "time": "Drip 60 min",
+      "icon": "✨",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "ALA (300mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "0.9% NSS 10 ml + Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "0.9% NSS 10 ml + Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "wf_fast": {
+      "group": "Water Fasting",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS (Water Fasting)",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "wf_drip": {
+      "group": "Water Fasting",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS (Water Fasting)",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "4 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "mito_fast": {
+      "group": "Mitochondrial Booster",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "mito_drip": {
+      "group": "Mitochondrial Booster",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Calcium Gluconate",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 ml"
+            }
+          ]
+        },
+        {
+          "head": "And IV Drip in 35 min",
+          "items": [
+            {
+              "name": "Neoamiyu",
+              "qty": "200 ml"
+            }
+          ]
+        }
+      ]
+    },
+    "gs_fast": {
+      "group": "Good Sleep",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "0.3 ml"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "gs_drip": {
+      "group": "Good Sleep",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Calcium Gluconate",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "1 ml"
+            }
+          ]
+        },
+        {
+          "head": "And IV Drip in 35 min",
+          "items": [
+            {
+              "name": "Neoamiyu",
+              "qty": "200 ml"
+            }
+          ]
+        }
+      ]
+    },
+    "cb_fast": {
+      "group": "Carb Block",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "cb_drip": {
+      "group": "Carb Block",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "ALA (300mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sfb_fast": {
+      "group": "Super Fat Burn",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "L-carnitine 1000mg/amp",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B12",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Calcium Gluconate 10ml/amp",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "sfb_drip": {
+      "group": "Super Fat Burn",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "L-carnitine 1000mg/amp",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Calcium Gluconate 10ml/amp",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hg_fast": {
+      "group": "Happy Gut",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin K3",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hg_drip": {
+      "group": "Happy Gut",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Calcium Gluconate",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin K3",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Drip in 30 min",
+          "items": [
+            {
+              "name": "Neoamiyu",
+              "qty": "200 ml"
+            }
+          ]
+        }
+      ]
+    },
+    "shn_fast": {
+      "group": "Skin Hair & Nails",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "0.2 ml"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "shn_drip": {
+      "group": "Skin Hair & Nails",
+      "label": "IV Drip",
+      "time": "Drip 30 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Biotin",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Zinc Sulfate (10mg/ml)",
+              "qty": "1 ml"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Calcium Gluconate",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hbr_fast": {
+      "group": "Healthy Brain",
+      "label": "IV Fast Drip",
+      "time": "Drip 25 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 25 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hbr_drip": {
+      "group": "Healthy Brain",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Lipotocin (ALA 300mg)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hht_fast": {
+      "group": "Healthy Heart",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "hht_drip": {
+      "group": "Healthy Heart",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "5 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Ubichinon",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Beecalfor Calcium",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "mb_fast": {
+      "group": "Muscle Builder",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "mb_drip": {
+      "group": "Muscle Builder",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Arginine 6g + NSS/D5W 100 ml",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "lbp_fast": {
+      "group": "Lower Blood Pressure",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Polilevo",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "lbp_drip": {
+      "group": "Lower Blood Pressure",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Arginine 6g + NSS/D5W 100 ml",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Slowly Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "ss_fast": {
+      "group": "Sexual Support",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Polilevo",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "ss_drip": {
+      "group": "Sexual Support",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Arginine 6g + NSS/D5W 100 ml",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "4 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "tox_fast": {
+      "group": "Toxin Detoxification",
+      "label": "IV Fast Drip",
+      "time": "Drip 30 min",
+      "icon": "💧",
+      "sections": [
+        {
+          "head": "IV Drip in 30 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "100 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "100 ml"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "1 amp"
+            },
+            {
+              "name": "Acetin (300 mg/amp)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min",
+          "items": [
+            {
+              "name": "Vitamin B12 + NSS 20 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "tox_drip": {
+      "group": "Toxin (Heavy Metal) Detoxification",
+      "label": "IV Drip",
+      "time": "Drip 60 min",
+      "icon": "🌿",
+      "sections": [
+        {
+          "head": "IV Drip in 60 min",
+          "items": [
+            {
+              "name": "0.9% NSS",
+              "qty": "250 ml"
+            },
+            {
+              "name": "D5W",
+              "qty": "250 ml"
+            },
+            {
+              "name": "EDTA (50 kg ~2g)",
+              "qty": "1–3 g"
+            },
+            {
+              "name": "Vitamin C (500mg/amp)",
+              "qty": "10 amp"
+            },
+            {
+              "name": "Vitamin B complex",
+              "qty": "2 amp"
+            },
+            {
+              "name": "Vitamin B6",
+              "qty": "1 amp"
+            },
+            {
+              "name": "50% MgSO4 (1000mg/1 amp)",
+              "qty": "2 amp"
+            },
+            {
+              "name": "7.5% NaHCO3 (75 mg/ml)",
+              "qty": "1 amp"
+            }
+          ]
+        },
+        {
+          "head": "And IV Push in 5 min (เลือก)",
+          "items": [
+            {
+              "name": "GSH (1200 mg/amp) + NSS 20 ml",
+              "qty": "1 amp"
+            },
+            {
+              "name": "GSH (600 mg/amp) + NSS 10 ml",
+              "qty": "1 amp"
+            }
+          ]
+        }
+      ]
+    },
+    "custom": {
+      "group": "Custom",
+      "label": "Custom Formula",
+      "time": "กำหนดเอง",
+      "icon": "🧪",
+      "sections": []
+    }
+  }
+}
