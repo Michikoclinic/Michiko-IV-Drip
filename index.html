@@ -1144,8 +1144,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 const FORMULA_UPDATED = '22/06/69';
-const SUPABASE_URL = 'https://htwlenisjffyqbmxyhae.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_OZeOqpS-Qz5PhmRpQ7I-lw_Bda3rRy2';
+const SUPABASE_URL = 'https://bnbnvthnhvxfgrgrqdhv.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_yPTtAfOGP9Sc36ILWw3mfA_4mGmYeN_';
 let pendingPrintPaper = null;
 
 function getPackageBadge(pkg) {
@@ -2527,21 +2527,31 @@ function buildOrderNumber(hn, timestamp) {
   return `IV${timestamp.shortDate}-${String(seq).padStart(3, '0')}`;
 }
 
-function getOrderUrl(orderId) {
+function createLookupToken() {
+  const bytes = new Uint8Array(12);
+  if (window.crypto && window.crypto.getRandomValues) {
+    window.crypto.getRandomValues(bytes);
+    return Array.from(bytes, byte => byte.toString(16).padStart(2, '0')).join('');
+  }
+  return `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 12)}`;
+}
+
+function getOrderUrl(orderId, lookupToken) {
   const base = window.location.href.split('#')[0].split('?')[0];
   if (base.startsWith('file:')) return orderId;
-  return `${base}?o=${encodeURIComponent(orderId)}`;
+  const tokenParam = lookupToken ? `&t=${encodeURIComponent(lookupToken)}` : '';
+  return `${base}?o=${encodeURIComponent(orderId)}${tokenParam}`;
 }
 
-function getStickerQrPayload(orderId) {
+function getStickerQrPayload(order) {
   if (isSupabaseConfigured() && window.location.protocol.startsWith('http')) {
-    return getOrderUrl(orderId);
+    return getOrderUrl(order.orderId, order.lookupToken);
   }
-  return orderId;
+  return order.orderId;
 }
 
-function getQrImageSrc(orderId) {
-  const data = getStickerQrPayload(orderId);
+function getQrImageSrc(order) {
+  const data = getStickerQrPayload(order);
   return `https://api.qrserver.com/v1/create-qr-code/?size=320x320&ecc=M&margin=10&data=${encodeURIComponent(data)}`;
 }
 
@@ -2574,13 +2584,12 @@ async function saveOrderRecord(order) {
 
   if (!isSupabaseConfigured()) return;
   try {
-    await supabaseRequest('iv_orders', {
+    await supabaseRequest('rpc/save_iv_order', {
       method: 'POST',
-      headers: { Prefer: 'resolution=merge-duplicates' },
       body: JSON.stringify({
-        order_id: order.orderId,
-        order_data: order,
-        updated_at: new Date().toISOString()
+        p_order_id: order.orderId,
+        p_lookup_token: order.lookupToken,
+        p_order_data: order
       })
     });
   } catch (err) {
@@ -2588,7 +2597,7 @@ async function saveOrderRecord(order) {
   }
 }
 
-async function fetchOrderRecord(orderId) {
+async function fetchOrderRecord(orderId, lookupToken) {
   try {
     const cached = localStorage.getItem(`michiko.order.${orderId}`);
     if (cached) return JSON.parse(cached);
@@ -2596,12 +2605,15 @@ async function fetchOrderRecord(orderId) {
     console.warn('Local order could not be read.', err);
   }
 
-  if (!isSupabaseConfigured()) return null;
+  if (!isSupabaseConfigured() || !lookupToken) return null;
   try {
-    const rows = await supabaseRequest(`iv_orders?order_id=eq.${encodeURIComponent(orderId)}&select=order_data&limit=1`, {
-      method: 'GET'
+    return await supabaseRequest('rpc/get_iv_order', {
+      method: 'POST',
+      body: JSON.stringify({
+        p_order_id: orderId,
+        p_lookup_token: lookupToken
+      })
     });
-    return rows && rows[0] ? rows[0].order_data : null;
   } catch (err) {
     console.warn('Online order could not be loaded.', err);
     return null;
@@ -2763,6 +2775,7 @@ function getCurrentOrderData() {
   return {
     orderId,
     orderNumber: orderId,
+    lookupToken: createLookupToken(),
     date: timestamp.date,
     time: timestamp.time,
     hn,
@@ -2784,7 +2797,7 @@ function getCurrentOrderData() {
 function buildStickerTemplate(order) {
   const qrMarkup = `
     <img
-      src="${escapeHTML(getQrImageSrc(order.orderId))}"
+      src="${escapeHTML(getQrImageSrc(order))}"
       alt="QR Code"
       onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'iv-sticker-qr-fallback', innerHTML:'ORDER ID<br>${escapeHTML(order.orderId)}'}))"
     >`;
@@ -2966,19 +2979,20 @@ function setReviewMode(title, sub, printVisible, cancelText) {
 async function openOrderFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const orderId = params.get('o') || params.get('orderId');
+  const lookupToken = params.get('t') || params.get('token');
   if (!orderId) return;
 
   setReviewMode('กำลังโหลดออเดอร์', orderId, false, 'ปิด');
   document.getElementById('reviewBody').innerHTML = '<div class="review-item"><span>Order ID</span><span>' + escapeHTML(orderId) + '</span></div>';
   document.getElementById('reviewOverlay').style.display = 'flex';
 
-  const order = await fetchOrderRecord(orderId);
+  const order = await fetchOrderRecord(orderId, lookupToken);
   if (!order) {
     document.getElementById('reviewBody').innerHTML = `
       <div class="review-formula">ไม่พบข้อมูลออเดอร์</div>
       <div class="review-item"><span>Order ID</span><span>${escapeHTML(orderId)}</span></div>
       <div class="review-section-title">หมายเหตุ</div>
-      <div class="review-item"><span>สถานะ</span><span>${isSupabaseConfigured() ? 'ไม่พบในฐานข้อมูล' : 'ยังไม่ได้ตั้งค่าฐานข้อมูลออนไลน์'}</span></div>
+      <div class="review-item"><span>สถานะ</span><span>${isSupabaseConfigured() ? 'ไม่พบในฐานข้อมูล หรือ QR ไม่มีรหัสเปิดดู' : 'ยังไม่ได้ตั้งค่าฐานข้อมูลออนไลน์'}</span></div>
     `;
     setReviewMode('IV Order', 'ยังไม่พบข้อมูลออนไลน์สำหรับรหัสนี้', false, 'ปิด');
     return;
